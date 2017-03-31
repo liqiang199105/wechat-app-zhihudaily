@@ -5,6 +5,7 @@ var utils = require('../../utils/util.js')
 Page({
   data: {
     list: [],
+    banner:[],
     duration: 2000,
     indicatorDots: true,
     autoplay: true,
@@ -24,7 +25,7 @@ Page({
     var that = this
     that.setData({ loading: true })
     wx.request({
-      url: 'http://news.at.zhihu.com/api/4/news/before/' + (Number(utils.formatDate(date)) + 1),
+      url: 'https://api.icaibei.net/live/banner' + (Number(utils.formatDate(date)) + 1),
       headers: {
         'Content-Type': 'application/json'
       },
@@ -44,25 +45,27 @@ Page({
   onLoad () {
     let that = this
     wx.request({
-      url: 'http://news-at.zhihu.com/api/4/news/latest',
+      url: 'https://api.icaibei.net/live/banner',
       headers: {
         'Content-Type': 'application/json'
       },
       success (res) {
+        console.log(res)
+        console.log(res.data)
          that.setData({
-           banner: res.data.top_stories,
-           list: [{ header: '今日热闻' }].concat(res.data.stories)
+           banner: res.data,
+           list: [{ header: '热门' }].concat(res.data)
          })
       }
     })
     this.index = 1
     //调用应用实例的方法获取全局数据
-    // app.getUserInfo(function(userInfo){
-    //   //更新数据
-    //   that.setData({
-    //     userInfo:userInfo
-    //   })
-    // })
+    app.getUserInfo(function(userInfo){
+      //更新数据
+      that.setData({
+        userInfo:userInfo
+      })
+    })
     
   }
 })
