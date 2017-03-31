@@ -7,6 +7,12 @@
     <view class="art-source">{{art.desc}}</view>
   </view>
   <view class="art-content">
-    {{art.body}}
+      <block wx:for="{{art.body}}" wx:for-index="id" wx:for-item="know">
+        <view class="art-content">
+          <text>{{id + 1}}. {{know}}</text>
+        </view>
+    </block>
   </view>
+
+
 </view>
