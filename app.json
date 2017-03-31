@@ -8,7 +8,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#1e212a",
-    "navigationBarTitleText": "知乎日报",
+    "navigationBarTitleText": "股票小知识",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -20,12 +20,12 @@
       "pagePath": "pages/index/index",
       "iconPath": "images/icon_API.png",
       "selectedIconPath": "images/icon_API_HL.png",
-      "text": "主页"
+      "text": "知识库"
     }, {
       "pagePath": "pages/theme/theme",
       "iconPath": "images/icon_component.png",
       "selectedIconPath": "images/icon_component_HL.png",
-      "text": "主题日报"
+      "text": "视频库"
     }]
   },
   "networkTimeout": {
