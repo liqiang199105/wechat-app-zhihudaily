@@ -1,6 +1,7 @@
 
 module.exports.getBannerData = getBannerData;
 module.exports.getKonwledgesData = getKonwledgesData;
+module.exports.getKnowDetail = getKnowDetail; 
 
 // ============================================================================
 // 首页banner数据
@@ -107,3 +108,15 @@ function getKonwledgesData() {
     //   }
     // })
 }
+
+var detail = {
+    "title": "股票",
+    "desc" : "",
+    "cover": "https://img.cdn.icaibei.net/avatar/201703/c22c277ffb8b1f1f55c8ad021b5ffe49.jpg",
+    "body":"概念编辑股票是一种有价证券，是股份公司在筹集资本时向出资人发行的股份凭证，代表着其持有者（即股东）对股份公司的所有权，购买股票也是购买企业生意的一部分，即可和企业共同成长发展。这种所有权为一种综合权利，如参加股东大会、投票表决、参与公司的重大决策、收取股息或分享红利差价等，但也要共同承担公司运作错误所带来的风险。获取经常性收入是投资者购买股票的重要原因之一，分红派息是股票投资者经常性收入的主要来源。一级市场一级市场（Primary Market）也称为发行市场（Issuance Market），它是指公司直接或通过中介机构向投资者出售新发行的股票的市场。所谓新发行的股票包括初次发行和再发行的股票，前者是公司第一次向投资者出售的原始股，后者是在原始股的基础上增加新的份额。一级市场的运作过程"
+
+}
+function getKnowDetail() {
+    return detail;
+}
+
