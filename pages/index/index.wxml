@@ -11,7 +11,7 @@
 
   <view class="news-item-container">
     <block wx:for="{{knowledges}}" wx:for-index="id" wx:for-item="know">
-      <!--<navigator  url="../detail/detail?id={{know.id}}">-->
+      <navigator  url="../detail/detail?id={{know.id}}">
         <view class="news-item">
           <view class="news-item-left">
             <text class="news-item-title">
@@ -21,7 +21,7 @@
             <image src="{{know.cover}}" class="news-image" />
           </view>
         </view>
-      <!--</navigator>-->
+      </navigator>
     </block>
   </view>
 </view>
