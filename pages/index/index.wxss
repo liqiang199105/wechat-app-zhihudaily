@@ -65,17 +65,18 @@ page {
 }
 
 .news-item-right {
-  width: 80px;
-  height: 80px;
+  width: 30px;
+  height: 30px;
 }
 
 .news-image {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
+  border: 10px;
 }
 
 .news-item-title {
-  font-size: 16px;
+  font-size: 13px;
   color: #fff;
   background-color: #101318;
 }

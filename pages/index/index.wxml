@@ -13,7 +13,8 @@
       <navigator  url="../detail/detail?id={{know.id}}">
         <view class="news-item">
           <view class="news-item-left">
-            <text class="news-item-title">{{know.desc}}</text>
+            <text class="news-item-title">
+            {{know.title}} : {{know.desc}}</text>
           </view>
           <view class="news-item-right">
             <image src="{{know.cover}}" class="news-image" />
