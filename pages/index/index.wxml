@@ -1,16 +1,17 @@
 <view class="container">
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" class="banners" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{banners}}" wx:for-index="index" wx:for-item="banner">
-      <swiper-item class="banner">
-        <image src="{{banner.image}}" data-id="{{banner.newsId}}" bindtap="bindViewTap" class="banner-image" width="80%" height="95%" />
-        <text class="banner-title">{{item.title}}</text>
-      </swiper-item>
-    </block>
-  </swiper>
+ <view class="search flex-wrp">
+      <view class="search-left flex-item">
+          <image src="../../images/search.png"></image>
+          <input placeholder="搜索话题, 问题或人" placeholder-class="search-placeholder"/>
+      </view>
+      <view class="search-right flex-item" bindtap="upper">
+          <image src="../../images/lighting.png"></image>
+      </view>
+  </view>
 
   <view class="news-item-container">
     <block wx:for="{{knowledges}}" wx:for-index="id" wx:for-item="know">
-      <navigator  url="../detail/detail?id={{know.id}}">
+      <!--<navigator  url="../detail/detail?id={{know.id}}">-->
         <view class="news-item">
           <view class="news-item-left">
             <text class="news-item-title">
@@ -20,7 +21,7 @@
             <image src="{{know.cover}}" class="news-image" />
           </view>
         </view>
-      </navigator>
+      <!--</navigator>-->
     </block>
   </view>
 </view>

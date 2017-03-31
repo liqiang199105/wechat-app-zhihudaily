@@ -68,6 +68,30 @@ var knowledges = {
         {
             "id": 2,
             "title": "印花税",
+            "cover": "https://img.cdn.icaibei.net/avatar/201703/25ea59394c5537e268b6eb2f6bf02df3.png",
+            "desc": "印花税是对经济活动和经济交往中设立、领受具有法律效力的凭证的行为所征收的一种税。因采用在应税凭证上粘贴印花税票作为完税的标志而得名。",
+            "count": "1"
+        },{
+            "id": 2,
+            "title": "创业板",
+            "cover": "https://img.cdn.icaibei.net/avatar/201703/e32a4b3d6eb7646c5577986668273986.png",
+            "desc": "创业板，又称二板市场（Second-board Market）即第二股票交易市场，是与主板市场（Main-Board Market）不同的一类证券市场，专为暂时无法在主板上市的创业型企业、中小企业和高科技产业企业等需要进行融资和发展的企业提供融资途径和成长空间的证券交易市场.",
+            "count": "1"
+        },{
+            "id": 2,
+            "title": "印花税",
+            "cover": "https://img.cdn.icaibei.net/avatar/201703/4be487cd30336cf22d20afba1fbad03a.png",
+            "desc": "印花税是对经济活动和经济交往中设立、领受具有法律效力的凭证的行为所征收的一种税。因采用在应税凭证上粘贴印花税票作为完税的标志而得名。",
+            "count": "1"
+        },{
+            "id": 2,
+            "title": "印花税",
+            "cover": "https://img.cdn.icaibei.net/avatar/201703/4be487cd30336cf22d20afba1fbad03a.png",
+            "desc": "印花税是对经济活动和经济交往中设立、领受具有法律效力的凭证的行为所征收的一种税。因采用在应税凭证上粘贴印花税票作为完税的标志而得名。",
+            "count": "1"
+        },{
+            "id": 2,
+            "title": "印花税",
             "cover": "https://img.cdn.icaibei.net/avatar/201703/4be487cd30336cf22d20afba1fbad03a.png",
             "desc": "印花税是对经济活动和经济交往中设立、领受具有法律效力的凭证的行为所征收的一种税。因采用在应税凭证上粘贴印花税票作为完税的标志而得名。",
             "count": "1"
