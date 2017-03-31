@@ -4,7 +4,7 @@ var app = getApp()
 var utils = require('../../utils/util.js')
 Page({
   data: {
-    list: [],
+    knowledges: [],
     banner:[],
     duration: 2000,
     indicatorDots: true,
@@ -25,14 +25,14 @@ Page({
     var that = this
     that.setData({ loading: true })
     wx.request({
-      url: 'https://api.icaibei.net/live/banner' + (Number(utils.formatDate(date)) + 1),
+      url: 'https://api.icaibei.net/live/banner?' + (Number(utils.formatDate(date)) + 1),
       headers: {
         'Content-Type': 'application/json'
       },
       success (res) {
          that.setData({
            loading: false,
-           list: that.data.list.concat([{ header: utils.formatDate(date, '-') }]).concat(res.data.stories)
+           knowledges: that.data.list.concat([{ header: utils.formatDate(date, '-') }]).concat(res.data.stories)
          })
       }
     })
@@ -54,7 +54,7 @@ Page({
         console.log(res.data)
          that.setData({
            banner: res.data,
-           list: [{ header: '热门' }].concat(res.data)
+           knowledges: [{ header: '热门' }].concat(res.data)
          })
       }
     })
