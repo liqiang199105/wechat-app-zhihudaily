@@ -7,15 +7,15 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#00a2ea",
+    "navigationBarBackgroundColor": "#1e212a",
     "navigationBarTitleText": "知乎日报",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "#353535",
+    "color": "#ffffff",
     "selectedColor": "#3cc51f",
     "borderStyle": "white",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#1e212a",
     "list": [{
       "pagePath": "pages/index/index",
       "iconPath": "images/icon_API.png",
