@@ -9,7 +9,7 @@
   <view class="art-content">
       <block wx:for="{{art.body}}" wx:for-index="id" wx:for-item="know">
         <view class="art-content">
-          <text>{{id + 1}}. {{know}}</text>
+          <text>{{id+1}}. {{know}}</text>
         </view>
     </block>
   </view>
