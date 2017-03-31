@@ -31,9 +31,9 @@
 .art-content {
   font-size: 13px;
   color: #fff;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 40px;
   background-color: #101318;
   line-height: 1.5;
 }
