@@ -1,22 +1,22 @@
 <view class="container">
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" class="banners" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{banner}}">
+    <block wx:for="{{banners}}" wx:for-index="index" wx:for-item="banner">
       <swiper-item class="banner">
-        <image src="{{item.image}}" data-id="{{item.id}}" bindtap="bindViewTap" class="banner-image" width="100%" height="100%" />
+        <image src="{{banner.image}}" data-id="{{banner.newsId}}" bindtap="bindViewTap" class="banner-image" width="80%" height="95%" />
         <text class="banner-title">{{item.title}}</text>
       </swiper-item>
     </block>
   </swiper>
+
   <view class="news-item-container">
-    <block wx:for="{{list}}" wx:for-index="id">
-      <text wx:if="{{item.header}}" class="sub-title">{{item.header}}</text>
-      <navigator wx:else url="../detail/detail?id={{item.id}}">
+    <block wx:for="{{knowledges}}" wx:for-index="id" wx:for-item="know">
+      <navigator  url="../detail/detail?id={{know.id}}">
         <view class="news-item">
           <view class="news-item-left">
-            <text class="news-item-title">{{item.title}}</text>
+            <text class="news-item-title">{{know.desc}}</text>
           </view>
           <view class="news-item-right">
-            <image src="{{item.images[0]}}" class="news-image" />
+            <image src="{{know.cover}}" class="news-image" />
           </view>
         </view>
       </navigator>
