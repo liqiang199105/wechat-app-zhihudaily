@@ -7,10 +7,12 @@
     "pages/list/list"
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#1e212a",
     "navigationBarTitleText": "股票小知识",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"#1e212a"
   },
   "tabBar": {
     "color": "#ffffff",
