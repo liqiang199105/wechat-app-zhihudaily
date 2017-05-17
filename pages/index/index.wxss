@@ -111,6 +111,12 @@ page {
 }
 
 .news-item-title {
+  font-size: 18px;
+  color: #3cc51f;
+  text-align:center;
+}
+
+.news-item-desc {
   font-size: 13px;
   color: #fff;
 }

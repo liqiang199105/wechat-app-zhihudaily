@@ -28,10 +28,19 @@
 }
 
 .art-source {
+  font-family: 'Lucida Sans',
+                 'Lucida Sans Regular',
+                 'Lucida Grande',
+                 'Lucida Sans Unicode',
+                 Geneva,
+                 Verdana,
+                 sans-serif;
   position: relative;
-  bottom: 15px;
+  padding-top: 1px;
+  padding-left: 15px;
+  bottom: 10px;
   font-size: 14px;
-  right: 8px;
+  right: 10px;
 }
 
 .art-content {
@@ -39,7 +48,7 @@
   color: #fff;
   padding-left: 5px;
   padding-right: 5px;
-  padding-top: 20px;
+  padding-top: 5px;
   background-color: #101318;
   line-height: 1.5;
 }

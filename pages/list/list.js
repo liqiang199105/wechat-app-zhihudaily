@@ -11,7 +11,7 @@ Page({
     var that = this
     this.title = options.title
     wx.request({
-      url: 'http://news-at.zhihu.com/api/4/theme/' + options.id,
+      url: 'https://www.larkin1991.com/json/list/page' + options.id,
       headers: {
         'Content-Type': 'application/json'
       },

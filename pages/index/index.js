@@ -2,8 +2,6 @@
 // home.js
 // ============================================================================
 
-var homeService = require('../../service/s_home.js')
-
 var app = getApp()
 
 Page({
@@ -26,7 +24,7 @@ Page({
   onLoad: function () {
     var that = this
     wx.request({
-      url: 'https://www.larkin1991.com/json/stock',
+      url: 'https://www.larkin1991.com/json/list/page' + 1,
       data: {},
       header: {
         'Content-Type': 'application/json'

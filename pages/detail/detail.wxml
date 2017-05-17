@@ -1,16 +1,22 @@
-
 <!--detail.wxml-->
 <view class="container">
   <view class="art-header">
-    <view class="art-title">{{art.title}}</view>
     <image src="{{art.cover}}" class="art-img" />
-    <view class="art-source">{{art.desc}}</view>
   </view>
   <view class="art-content">
-      <block wx:for="{{art.body}}" wx:for-index="id" wx:for-item="know">
-        <view class="art-content">
-          <text>{{id+1}}. {{know}}</text>
-        </view>
+    <view class="art-source">{{art.description}}</view>
+    <block wx:for="{{art.graphs}}" wx:for-index="id" wx:for-item="know">
+      <view class="art-content">
+        <block wx:if="{{know.title}}">
+          <text>{{know.title}}\n</text>
+        </block>
+         <block wx:if="{{know.image}}">
+          <image style="width:100%;" src="{{know.image}}"></image>
+          <text>\n</text>
+        </block>
+        <text>{{know.content}}</text>
+        <text>\n</text>
+      </view>
     </block>
   </view>
 
