@@ -17,4 +17,10 @@ Page({
       art : detail
     })
   },
+  onShareAppMessage: function (options) {
+    return {
+      title: art.title,
+      path: '/pages/detail?id=123'
+    }
+  },
 });

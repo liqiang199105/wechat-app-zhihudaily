@@ -89,24 +89,23 @@ var knowledges = {
 }
 
 function getKonwledgesData() {
-    return knowledges.data;
-
-    // return wx.request({
-    //   url: 'https://api.icaibei.net/live/banner',
-    //   data: {},
-    //   method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-    //   header: { // 设置请求的 header
-    //     'Content-Type': 'application/json'
-    //   }, 
-    //   success: function(res){
-    //      console.log(res.data);
-    //      return res.data;
-    //   },
-    //   fail: function() {
-    //   },
-    //   complete: function() {
-    //   }
-    // })
+    return new Promise(function(resolve, reject){
+    wx.request({
+      url: 'https://www.larkin1991.com/json/stock',
+      data: {},
+      header: {
+        //'Content-Type': 'application/json'
+      },
+      success: function(res) {
+        console.log("success")
+        resolve(res)
+      },
+      fail: function (res) {
+        reject(res)
+        console.log("failed")
+      }
+    })
+  })
 }
 
 var detail = {

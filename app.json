@@ -1,7 +1,6 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/theme/theme",
     "pages/detail/detail",
     "pages/mine/mine",
     "pages/list/list"
@@ -24,11 +23,6 @@
       "iconPath": "images/icon_API.png",
       "selectedIconPath": "images/icon_API_HL.png",
       "text": "知识库"
-    }, {
-      "pagePath": "pages/theme/theme",
-      "iconPath": "images/icon_component.png",
-      "selectedIconPath": "images/icon_component_HL.png",
-      "text": "视频库"
     },{
       "pagePath": "pages/mine/mine",
       "iconPath": "images/burger.png",
