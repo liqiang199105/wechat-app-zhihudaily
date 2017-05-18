@@ -1,7 +1,8 @@
 <!--detail.wxml-->
 <view class="container">
   <view class="art-header">
-    <image src="{{art.cover}}" class="art-img" />
+  <video id="myVideo" class="art-video" src="{{art.video}}" ></video>
+
   </view>
   <view class="art-content">
     <view class="art-source">{{art.description}}</view>

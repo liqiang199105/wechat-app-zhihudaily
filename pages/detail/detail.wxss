@@ -26,6 +26,11 @@
   width: 100%;
   height: 200px;
 }
+.art-video{
+   width: 100%;
+  height: 100%;
+  position: absolute;
+}
 
 .art-source {
   font-family: 'Lucida Sans',
@@ -36,7 +41,7 @@
                  Verdana,
                  sans-serif;
   position: relative;
-  padding-top: 1px;
+  padding-top: 12px;
   padding-left: 15px;
   bottom: 10px;
   font-size: 14px;

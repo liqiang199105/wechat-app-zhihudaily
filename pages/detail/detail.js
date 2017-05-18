@@ -35,4 +35,7 @@ Page({
       path: '/pages/detail?id=' + options.id
     }
   },
+  onReady: function (res) {
+    this.videoContext = wx.createVideoContext('myVideo')
+  },
 });
